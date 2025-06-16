@@ -1,24 +1,46 @@
 {
-  "name": "eleventy-test",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Dakal-Itorasch/Eleventy-Test.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Dakal-Itorasch/Eleventy-Test/issues"
-  },
-  "homepage": "https://github.com/Dakal-Itorasch/Eleventy-Test#readme",
-  "description": "",
-  "dependencies": {
-    "@11ty/eleventy": "^3.1.1"
-  },
-  "type": "module"
+    "name": "eleventy-test",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "build": "npx @11ty/eleventy",
+        "build-nocolor": "cross-env NODE_DISABLE_COLORS=1 npx @11ty/eleventy",
+        "build-ghpages": "npx @11ty/eleventy --pathprefix=/eleventy-base-blog/",
+        "start": "npx @11ty/eleventy --serve --quiet",
+        "start-ghpages": "npx @11ty/eleventy --pathprefix=/eleventy-base-blog/ --serve --quiet",
+        "debug": "cross-env DEBUG=Eleventy* npx @11ty/eleventy",
+        "debugstart": "cross-env DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
+        "benchmark": "cross-env DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Dakal-Itorasch/Eleventy-Test.git"
+    },
+    "keywords": [],
+    "author": "Dakal",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Dakal-Itorasch/Eleventy-Test/issues"
+    },
+    "homepage": "https://github.com/Dakal-Itorasch/Eleventy-Test#readme",
+    "description": "",
+    "engines": {
+        "node": ">=18"
+    },
+    "devDependencies": {
+        "@11ty/eleventy": "^3.1.1",
+        "@11ty/eleventy-img": "^6.0.4",
+        "@11ty/eleventy-navigation": "^1.0.4",
+        "@11ty/eleventy-plugin-rss": "^2.0.4",
+        "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.1",
+        "cross-env": "^7.0.3",
+        "luxon": "^3.6.1",
+        "prismjs": "^1.30.0",
+        "zod": "^3.25.56",
+        "zod-validation-error": "^3.4.1"
+    },
+    "dependencies": {
+        "@zachleat/heading-anchors": "^1.0.3",
+        "simpledotcss": "^2.3.7"
+    }
 }
