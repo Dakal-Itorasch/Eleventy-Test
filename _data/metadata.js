@@ -5,7 +5,7 @@ export default {
 	description: "I don't know what to write here.",
 	author: {
 		name: "Dakal Itorasch",
-		email: "youremailaddress@example.com",
-		url: "https://example.com/about-me/"
+	//	email: "youremailaddress@example.com",
+	//	url: "https://example.com/about-me/"
 	}
 }
