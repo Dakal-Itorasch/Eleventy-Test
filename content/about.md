@@ -6,4 +6,8 @@ const eleventyNavigation = {
 ---
 # About
 
-I am a person that writes stuff.
+Hello i'm Dakal !
+
+<img src="./img/dakal_cropped.png">
+
+![Dakal_md](./img/dakal_cropped.png)
