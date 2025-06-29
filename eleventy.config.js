@@ -86,7 +86,7 @@ export default async function(eleventyConfig) {
 		// Output formats for each image.
 		formats: ["avif", "webp", "auto"],
 
-		// widths: ["auto"],
+		//widths: ["auto"],
 
 		failOnError: false,
 		htmlOptions: {
@@ -114,6 +114,10 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addShortcode("currentBuildDate", () => {
 		return (new Date()).toISOString();
 	});
+
+	eleventyConfig.addFilter("toUppercase", (content) => {
+		return content.toUpperCase();
+	})
 
 	// Features to make your build faster (when you need them)
 
