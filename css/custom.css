@@ -1,11 +1,21 @@
+body {
+  margin: 0px;
+  background-image: url("/img/placeholder.png");
+  background-attachment: fixed;
+}
+
+.float-left {
+  float: left;
+}
+
 .visually-hidden:not(:focus):not(:active) {
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 :root {
@@ -47,9 +57,54 @@
     --preformatted: #ccc;
     --disabled: #111;
   }
+
   /* Add a bit of transparency so light media isn't so glaring in dark mode */
   img,
   video {
     opacity: 0.8;
   }
+}
+
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 8px;
+}
+
+.div1 {
+  display: flex;
+  background-color: red;
+  grid-column: span 5 / span 5;
+}
+
+.div2 {
+  display: flex;
+  background-color: blue;
+  grid-row: span 3 / span 3;
+  grid-row-start: 2;
+}
+
+.div3 {
+  display: flex;
+  background-color: lime;
+  grid-column: span 3 / span 3;
+  grid-row: span 3 / span 3;
+  grid-row-start: 2;
+}
+
+.div4 {
+  display: flex;
+  background-color: yellow;
+  grid-row: span 3 / span 3;
+  grid-column-start: 5;
+  grid-row-start: 2;
+}
+
+.div5 {
+  display: flex;
+  background-color: magenta;
+  grid-column: span 5 / span 5;
+  grid-row-start: 5;
 }

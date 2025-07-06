@@ -13,8 +13,10 @@ Also, i'm french, sorry about that (it's like a curse, i'm terrible at speaking 
 Alright ! This blog is a first for me. I want to write about me and the few things i do (eh, the little things i can show, i'm kinda shy about what i do).
 Also i'm a Furry, yaayyyy.
 
+<div>
 And now i need to find **HOW I CAN DOWNSCALE THIS DAMM IMAGE RIGHT HERE**.
 
-<img src="img/dakal_cropped.png" alt="This is a portrait of Dakal" eleventy:widths="200">
+<img src="img/dakal_cropped.png" alt="This is a portrait of Dakal" eleventy:widths="200" class="float-left">
+</div>
 
 THIS IS A WEBPAGE ABOUT DAKAL
