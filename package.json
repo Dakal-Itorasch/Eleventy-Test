@@ -41,6 +41,7 @@
     },
     "dependencies": {
         "@zachleat/heading-anchors": "^1.0.3",
-        "simpledotcss": "^2.3.7"
+        "simpledotcss": "^2.3.7",
+        "xp.css": "^0.2.6"
     }
 }
